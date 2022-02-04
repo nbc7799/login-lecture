@@ -28,7 +28,7 @@ button.addEventListener("click", (e) => {
       }
     })
     .catch((err) => {
-      console.log(new Error("로그인 중 에러 발생"));
-      // console.log("로그인 중 에러 발생"); 이렇게도가능
+      // console.log(new Error("로그인 중 에러 발생"));
+      console.log("로그인 중 에러 발생");
     });
 });
