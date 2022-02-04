@@ -20,10 +20,10 @@ const users = {
 //사용자가 req 보내면 입력한 정보 담아서 출력
 const process = {
   login: (req, res) => {
-    // POST 정보를 가집니다. 파싱을 위해서 body-parser와 같은 패키지가 필요
+    // POST 정보를 가짐, 파싱을 위해서 body-parser와 같은 패키지가 필요
     const id = req.body.id,
       password = req.body.password;
-
+    //body에 id와 password는 user가 입력한 값
     if (users.id.includes(id)) {
       const idx = users.id.indexOf(id);
       if (users.password[idx] === password) {
@@ -35,7 +35,7 @@ const process = {
 
     return res.json({
       success: false,
-      mas: "로그인에 실패하셨습니다.",
+      msg: "로그인에 실패하셨습니다.",
     });
   },
 };
