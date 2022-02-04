@@ -10,7 +10,8 @@ app.set("views", "./src/views");
 app.set("view engine", "ejs");
 
 app.use(express.static(`${__dirname}/src/public`));
-
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use("/", home); //use는 미들웨어등록해주는 메서드
 
 module.exports = app;

@@ -18,5 +18,4 @@ button.addEventListener("click", (e) => {
     },
     body: JSON.stringify(req),
   });
-  console.log(req);
 });
