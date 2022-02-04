@@ -11,5 +11,12 @@ button.addEventListener("click", (e) => {
     password: password.value,
   };
 
+  fetch("/login", {
+    method: "post",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(req),
+  });
   console.log(req);
 });
