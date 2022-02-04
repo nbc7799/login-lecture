@@ -99,8 +99,18 @@ app.listen(PORT, () => {
 - 스크립트는 패키지에 사용하고싶은 명령어들,start로 서버실행명령어설정가능
 - lock.json은 좀더 명확한 버젼이 명시,
 
-## 11. 깃,깃허브 관리
+## 11. Restful API
 
-## gogogo
-
-dd
+- Rest는 서버와 클라이언트가 통신하기위한 규칙
+- 기본적으로 HTTP를 사용해 클라이언트와 서버가 통신,데이터주고받음
+- REST는 자원의 표현을 가지고 상태를 전송한다.
+  RE : Representational(표현),
+  S : State(상태),
+  T : Transter(전송)
+- 자원은 URI , 표현은 Header로 전달가능하며 클라이언트가 전달 받고자 하는 데이터, 데이터타입같은거 명시가능, 상태는 모두 method로 나타내는데
+  get(조회), post(생성), put(수정), delete(삭제) 등
+- 즉 유튜브 접속하면 동영상들이라는 자원들을 uri로 명시하고
+  전달한다
+- Rest는 간단히말해 사이트 구성원리, 여기에 ful이붙으면 Rest한
+  Restful API는 사이트 구성원리를 준수하는 API
+  -dd
